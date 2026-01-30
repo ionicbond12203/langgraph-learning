@@ -11,10 +11,9 @@ requires-python = ">=3.10"
 dependencies = [
     "langgraph>=1.0.0",
     "python-dotenv>=1.0.1",
-    "langchain-ollama",       # <--- 必须加：让你可以用 Qwen
-    "duckduckgo-search",      # <--- 必须加：解决现在的报错 (ddgs)
-    "alpaca-py",              # <--- 建议加：为了你的股票机器人
-    "langchain-community"     # <--- 建议加：包含通用工具集
+    "langchain-ollama",       # Required for Qwen/Ollama models
+    "langchain-community",    # Required for DuckDuckGoSearchRun
+    "ddgs>=6.0.0",            # Required for DuckDuckGo search
 ]
 
 
